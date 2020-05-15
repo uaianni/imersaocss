@@ -8,7 +8,7 @@
 body {
   background-image: url(https://images-na.ssl-images-amazon.com/images/I/81AJHy7Um7L._AC_SL1500_.jpg);
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'Nunito', sans-serif;
   height: 100vh;
   color: teal;
   font-size: 12px;
@@ -77,11 +77,18 @@ a:hover {
 
 .site-title {
   font-size: 4em;
+  font-family: 'Homemade Apple', cursive; 
 }
 
 .site-subtitle {
   font-style: italic;
   color: teal;
+  font-family: 'Source Code Pro', monospace;
+  line-hight: 1.8em;
+}
+
+.portfolio h2 {
+  font-family: 'Source Code Pro', monospace;
 }
 
 .img-portfolio {
