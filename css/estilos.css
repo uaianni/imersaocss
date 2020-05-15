@@ -69,7 +69,7 @@ a:hover {
   text-decoration: underline;
 }
 
-site-subtitle,
+.site-subtitle,
 .site-title {
   color: whitesmoke;
   text-align: center;
