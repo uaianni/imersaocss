@@ -48,6 +48,7 @@ header {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -59,10 +60,20 @@ header {
   list-style: none;
 }
 
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 2s, color 1s;
+}
+
+.menu a:hover {
+  background-color: whitesmoke;
+  color: rgba(25,55,2,1);  
+}
+
 a{
   text-decoration: none;
   color: #9999ff;
-  display: block;
   padding: 10px 20px;
 }
 
@@ -88,11 +99,13 @@ a:hover {
   line-hight: 1.8em;
 }
 
+.contato,
 .portfolio {
    padding: 2em;
-   height: 100vh;
+   min-height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
   font-family: 'Source Code Pro', monospace;
   color: whitesmoke;
@@ -129,7 +142,28 @@ a:hover {
   width: 240px; 
   object-fit: cover;
   object-position: left bottom;
+  transitin: transform 500ms;
 }
+
+.img-portfolio:hover {
+  transform: scale(1.2) rotate(-1deg);
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  font-size: 4em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 1px 3px 5px yellowgreen;
+  
+  
 
 /*@media (min-width: 1200px; ) {
   .img-portfolio {
